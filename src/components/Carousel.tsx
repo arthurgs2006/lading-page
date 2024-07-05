@@ -1,43 +1,50 @@
 import { Col, Row, UncontrolledCarousel } from "reactstrap";
+import img1 from '../../public/img/img1.jpeg'
+import img2 from '../../public/img/img2.jpeg'
+import img3 from '../../public/img/img3.jpeg'
+import img4 from '../../public/img/img4.jpeg'
+import img5 from '../../public/img/img5.jpeg'
+import img6 from '../../public/img/img6.jpeg'
+import img7 from '../../public/img/img7.jpeg'
 const TESTIMONIES = [
     {
-        src: '../../public/img/img1.jpeg',
+        src: {img1},
         header: ' ',
         caption: "",
         key: '1'
     },
     {
-        src: '../../public/img/img2.jpeg',
+        src: {img2},
         header: ' ',
         caption: "",
         key: '2'
     },
     {
-        src: '../../public/img/img3.jpeg',
+        src: {img3},
         header: ' ',
         caption: "",
         key: '3'
     },
     {
-        src: '../../public/img/img4.jpeg',
+        src: {img4},
         header: ' ',
         caption: "",
         key: '4'
     },
     {
-        src: '../../public/img/img5.jpeg',
+        src: {img5},
         header: ' ',
         caption: "",
         key: '5'
     },
     {
-        src: '../../public/img/img6.jpeg',
+        src: {img6},
         header: ' ',
         caption: "",
         key: '6'
     },
     {
-        src: '../../public/img/img7.jpeg',
+        src: {img7},
         header: ' ',
         caption: "",
         key: '7'

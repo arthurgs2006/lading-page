@@ -17,7 +17,6 @@ const CollapsedSection = ({ titleElement, subtitleElement }: infoList) => {
                 </h6>
                 <span className="d-flex gap-3 align-items-center">
                     <i className={`bi ${collapseOpen? 'bi dash': 'bi-arrow-down-short'} text-black`}></i>
-                    {/* bi-arrow-down-short */}
                 </span>
             </a>
             <Collapse isOpen={collapseOpen}>
