@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+$orange: #FF9900;
+$light-orange: #FFBD59;
+$gray: #8a8a8a;
+$black: #000;
+$whitesmoke: #F5F5F5;
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Sora", -apple-system, system-ui, BlinkMacSystemFont, 'Roboto', "Segoe UI", Ubuntu;
+}
+
+.bg-header {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 10%, rgba(255, 153, 0, 1) 100%);
+}
+
+.bg-orange-transparent {
+    background: linear-gradient(50deg, rgba(255, 255, 255, 0) 20%, rgba(255, 153, 0, 1) 100%);
+}
+
+.bg-dark-transparent {
+    background: linear-gradient(180deg, $black 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-lightorange {
+    background: linear-gradient(0deg, $orange 20%, $light-orange 100%);
+}
+
+.bg-orange-transparent-invert {
+    background: linear-gradient(0deg, $orange 15%, rgba(255, 255, 255, 0) 100%);
+}
+
+.bg-iphone {
+    background-image: url('../../public/img/iphoneScreen.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+.bg-main {
+    background-image: url('../../public/backgrounds/bg-bitcoin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9);
+    height: 50rem;
+    width: auto;
+}
+
+.bg-section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-animation {
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $gray;
+    }
+}
+
+.animation-hover-scale {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        scale: 1.05;
+    }
+}
+
+.cardBox {
+    top: 100%;
+    left: -50%;
+    transform: translate(-50%);
+    width: 95%;
+}
+
+.initial-content,
+.new-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.screen-padding {
+    padding-top: 15vh;
+}
+.small-padding{
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+@media (max-width: 768px) {
+    .bg-iphone {
+        max-width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .small-padding{
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+}
+@media (max-width: 449px) {
+    .small-padding{
+        padding-left: 0vh;
+        padding-right: 0vh;
+    }
+}
+@media (max-width: 398px) {
+    .small-title{
+        font-size: 2vh;
+    }
+    .small-description{
+        font-size: xx-small;
+    }
+    .small-btn{
+        padding: 0vh;
+    }
+}
+
+@media (max-width: 360px) {
+    .bg-iphone{
+        background-image: url('');
+    }
+}
